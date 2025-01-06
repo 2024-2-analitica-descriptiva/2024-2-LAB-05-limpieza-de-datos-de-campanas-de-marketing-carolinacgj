@@ -161,7 +161,7 @@ def clean_campaign_data():
     df['day'] = pd.to_numeric(df['day'], errors='coerce')
 
     # Crear la columna 'last_contact_day' combinando 'day' y 'month' con el año 2022
-    df['last_contact_day'] = df.apply(
+    df['last_contact_date'] = df.apply(
         lambda row: f"2022-{int(row['month']):02d}-{int(row['day']):02d}" 
         if pd.notna(row['month']) and pd.notna(row['day']) else '2022-01-01', axis=1
     )
