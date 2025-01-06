@@ -122,7 +122,7 @@ def clean_campaign_data():
     campaign_df.to_csv(campaign_file, index=False)
     economics_df.to_csv(economics_file, index=False)
 
-    print("Archivos procesados y guardados en la carpeta de salida.")
+    #print("Archivos procesados y guardados en la carpeta de salida.")
 
     #Limpiar clientes
 
@@ -172,7 +172,7 @@ def clean_campaign_data():
     # Guardar el archivo CSV con los cambios
     df.to_csv('files/output/campaign.csv', index=False)
 
-    print("Transformaciones completadas y guardadas en el archivo.")
+    #print("Transformaciones completadas y guardadas en el archivo.")
 
 
 
